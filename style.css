@@ -1,0 +1,63 @@
+* {
+  font-family: 'Bungee Inline', cursive;
+}
+body {
+  background-color: #333333;
+  font-size: 30px;
+  padding-top: 30px;
+}
+#calculator {
+  background-color: #666666;
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  border-radius: 15px;
+  min-width: 350px;
+}
+#calculator h2 {
+  color: #cccccc;
+  font-size: .75em;
+  margin: 15px 0 15px 0;
+  text-shadow: 3px 3px #333333;
+}
+#calculator #screenRow {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#calculator #screen {
+  background-color: #cccccc;
+  border: 2.5px solid #333333;
+  box-shadow: 2px 2px #333333;
+}
+#calculator #screen #screenSum {
+  color: #666666;
+  font-size: .75em;
+}
+#calculator #buttons .btn {
+  font-weight: bold;
+  font-size: 0.75em;
+  border: 2.5px solid #333333;
+  box-shadow: 2px 2px #333333;
+  text-shadow: 1px 1px #333333;
+}
+#calculator #buttons .btn:focus {
+  outline: 0;
+}
+#calculator #buttons .btn:active {
+  box-shadow: 0px 0px #333333;
+}
+#calculator #buttons .btn-alt {
+  background-color: #BB9F06;
+}
+#calculator #buttons .btnRow {
+  padding-top: 15px;
+}
+#calculator #buttons #bottomBtnCol {
+  padding-bottom: 15px;
+}
+#calculator #buttons #equalsCol {
+  padding-left: 0;
+  padding-right: 0;
+}
+#calculator #buttons #equalsCol #btnEquals {
+  height: 113px;
+}

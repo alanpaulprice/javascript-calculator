@@ -1,0 +1,73 @@
+@color-1: #000;
+@color-2: lighten(@color-1, 20%);
+@color-3: lighten(@color-1, 40%);
+@color-4: lighten(@color-1, 80%);
+@color-alt: #BB9F06;
+@border-radius: 15px;
+* {
+  font-family: 'Bungee Inline', cursive;
+}
+
+body {
+  background-color: @color-2;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+#calculator {
+  background-color: @color-3;
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  border-radius: @border-radius;
+  min-width: 350px;
+  h2 {
+    color: @color-4;
+    font-size: .75em;
+    margin: 15px 0 15px 0;
+    text-shadow: 3px 3px @color-2;
+  }
+  #screenRow {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #screen {
+    background-color: @color-4;
+    border: 2.5px solid @color-2;
+    box-shadow: 2px 2px @color-2;
+    #screenSum {
+      color: @color-3;
+      font-size: .75em;
+    }
+  }
+  #buttons {
+    .btn {
+      font-weight: bold;
+      font-size: 0.75em;
+      border: 2.5px solid @color-2;
+      box-shadow: 2px 2px @color-2;
+      text-shadow: 1px 1px @color-2;
+      &:focus {
+        outline: 0;
+      }
+      &:active {
+        box-shadow: 0px 0px @color-2;
+      }
+    }
+    .btn-alt {
+      background-color: @color-alt;
+    }
+    .btnRow {
+      padding-top: 15px;
+    }
+    #bottomBtnCol {
+      padding-bottom: 15px;
+    }
+    #equalsCol {
+      padding-left: 0;
+      padding-right: 0;
+      #btnEquals {
+        height: 113px;
+      }
+    }
+  }
+}
